@@ -8,7 +8,12 @@ int sum_list(vector<int>& v, int head = 0)
 	if(head == v.size())
 		return 0;
 	else
-		return v[head] + sum_list(v, head + 1);
+	{
+		if(v[head] >= 0)
+			return v[head] + sum_list(v, head + 1);
+		else
+			return sum_list(v, head + 1);
+	}
 }
 
 int main()
