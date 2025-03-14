@@ -7,7 +7,7 @@ int calculate(vector<int>& v, int index = 0)
 {
 	if(index == v.size())
 		return 0;
-	else
+	else //m+-m++m+-m+...
 	{
 		if(index % 2 == 0)
 			return v[index] + calculate(v, index + 1);
