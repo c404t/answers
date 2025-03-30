@@ -2,7 +2,8 @@
 
 //what has changed:
 //overloaded ++ from inc_one_day
-//overloader == from equals
+//overloaded == from equals
+//overloaded << from print
 
 #include <iostream>
 #include <cstdlib>
